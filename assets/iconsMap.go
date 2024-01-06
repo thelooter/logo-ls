@@ -84,6 +84,7 @@ var Icon_Set = map[string]*Icon_Info{
 	"virtual":          {i: "\U000f0322", c: [3]uint8{3, 155, 229}},   // virtual
 	"email":            {i: "\U000f01ee", c: [3]uint8{66, 165, 245}},  // email
 	"audio":            {i: "\U000f075a", c: [3]uint8{239, 83, 80}},   // audio
+	"midi":             {i: "\U000f08f2", c: [3]uint8{66, 165, 245}},  // midi
 	"coffee":           {i: "\U000f0176", c: [3]uint8{66, 165, 245}},  // coffee
 	"document":         {i: "\U000f0219", c: [3]uint8{66, 165, 245}},  // document
 	"rust":             {i: "\U000f1617", c: [3]uint8{250, 111, 66}},  // rust

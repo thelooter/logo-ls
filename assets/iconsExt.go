@@ -283,6 +283,7 @@ var Icon_Ext = map[string]*Icon_Info{
 	"flac":              Icon_Set["audio"],
 	"m4a":               Icon_Set["audio"],
 	"wma":               Icon_Set["audio"],
+	"mid":               Icon_Set["midi"],
 	"aiff":              Icon_Set["audio"],
 	"coffee":            Icon_Set["coffee"],
 	"cson":              Icon_Set["coffee"],
