@@ -36,7 +36,8 @@ var Icon_Set = map[string]*Icon_Info{
 	"less":             {i: "\U000f0626", c: [3]uint8{2, 119, 189}},   // less
 	"json":             {i: "\U000f0626", c: [3]uint8{251, 193, 60}},  // json
 	"yaml":             {i: "\U000f0626", c: [3]uint8{244, 68, 62}},   // yaml
-	"xml":              {i: "\U000f022e", c: [3]uint8{64, 153, 69}},   // xml
+	"xml":              {i: "\U000f05c0", c: [3]uint8{64, 153, 69}},   // xml
+	"xaml":             {i: "\U000f05c0", c: [3]uint8{64, 153, 69}},   // xaml
 	"image":            {i: "\U000f021f", c: [3]uint8{48, 166, 154}},  // image
 	"javascript":       {i: "\ue74e", c: [3]uint8{255, 202, 61}},      // javascript
 	"javascript-map":   {i: "\U000f031e", c: [3]uint8{255, 202, 61}},  // javascript-map
@@ -87,7 +88,6 @@ var Icon_Set = map[string]*Icon_Info{
 	"document":         {i: "\U000f0219", c: [3]uint8{66, 165, 245}},  // document
 	"rust":             {i: "\U000f1617", c: [3]uint8{250, 111, 66}},  // rust
 	"raml":             {i: "\U000f0626", c: [3]uint8{66, 165, 245}},  // raml
-	"xaml":             {i: "\U000f0673", c: [3]uint8{66, 165, 245}},  // xaml
 	"haskell":          {i: "\U000f0c92", c: [3]uint8{254, 168, 62}},  // haskell
 	"git":              {i: "\U000f02a2", c: [3]uint8{229, 77, 58}},   // git
 	"lua":              {i: "\U000f08b1", c: [3]uint8{66, 165, 245}},  // lua
@@ -275,7 +275,7 @@ var Icon_Set = map[string]*Icon_Info{
 	// "editorconfig":     {i:"\u", c:[3]uint8{255, 255, 255}},        // editorconfig
 	// "watchman":         {i:"\u", c:[3]uint8{255, 255, 255}},        // watchman
 	// "aurelia":          {i:"\u", c:[3]uint8{255, 255, 255}},        // aurelia
-	"rollup":           {i:"\U000f0bc0", c:[3]uint8{217, 46, 47}},     // rollup
+	"rollup": {i: "\U000f0bc0", c: [3]uint8{217, 46, 47}}, // rollup
 	// "hack":             {i:"\u", c:[3]uint8{255, 255, 255}},        // hack
 	// "apollo":           {i:"\u", c:[3]uint8{255, 255, 255}},        // apollo
 	// "nodemon":          {i:"\u", c:[3]uint8{255, 255, 255}},        // nodemon
@@ -287,7 +287,7 @@ var Icon_Set = map[string]*Icon_Info{
 	// "cuda":             {i:"\u", c:[3]uint8{255, 255, 255}},        // cuda
 	// "dotjs":            {i:"\u", c:[3]uint8{255, 255, 255}},        // dotjs
 	// "sequelize":        {i:"\u", c:[3]uint8{255, 255, 255}},        // sequelize
-	"gatsby":           {i:"\U000f0e43", c:[3]uint8{116, 42, 187}},    // gatsby
+	"gatsby": {i: "\U000f0e43", c: [3]uint8{116, 42, 187}}, // gatsby
 	// "wakatime":         {i:"\u", c:[3]uint8{255, 255, 255}},        // wakatime
 	// "circleci":         {i:"\u", c:[3]uint8{255, 255, 255}},        // circleci
 	// "cloudfoundry":     {i:"\u", c:[3]uint8{255, 255, 255}},        // cloudfoundry
@@ -334,18 +334,18 @@ var Icon_Set = map[string]*Icon_Info{
 	// "sas":              {i:"\u", c:[3]uint8{255, 255, 255}},        // sas
 	// "slug":             {i:"\u", c:[3]uint8{255, 255, 255}},        // slug
 
-	"dir-config":      {i: "\U000f107f", c: [3]uint8{32, 173, 194}},   // dir-config
-	"dir-controller":  {i: "\U000f107f", c: [3]uint8{255, 194, 61}},   // dir-controller
-	"dir-git":         {i: "\ue5fb", c: [3]uint8{250, 111, 66}},       // dir-git
-	"dir-github":      {i: "\ue5fd", c: [3]uint8{84, 110, 122}},       // dir-github
-	"dir-npm":         {i: "\ue5fa", c: [3]uint8{203, 56, 55}},        // dir-npm
-	"dir-include":     {i: "\U000f0257", c: [3]uint8{3, 155, 229}},    // dir-include
-	"dir-import":      {i: "\U000f0257", c: [3]uint8{175, 180, 43}},   // dir-import
-	"dir-upload":      {i: "\U000f0259", c: [3]uint8{250, 111, 66}},   // dir-upload
-	"dir-download":    {i: "\U000f024d", c: [3]uint8{76, 175, 80}},    // dir-download
-	"dir-secure":      {i: "\U000f0250", c: [3]uint8{249, 169, 60}},   // dir-secure
-	"dir-images":      {i: "\uf74e", c: [3]uint8{43, 150, 137}},       // dir-images
-	"dir-environment": {i: "\uf74e", c: [3]uint8{102, 187, 106}},      // dir-environment
+	"dir-config":      {i: "\U000f107f", c: [3]uint8{32, 173, 194}}, // dir-config
+	"dir-controller":  {i: "\U000f107f", c: [3]uint8{255, 194, 61}}, // dir-controller
+	"dir-git":         {i: "\ue5fb", c: [3]uint8{250, 111, 66}},     // dir-git
+	"dir-github":      {i: "\ue5fd", c: [3]uint8{84, 110, 122}},     // dir-github
+	"dir-npm":         {i: "\ue5fa", c: [3]uint8{203, 56, 55}},      // dir-npm
+	"dir-include":     {i: "\U000f0257", c: [3]uint8{3, 155, 229}},  // dir-include
+	"dir-import":      {i: "\U000f0257", c: [3]uint8{175, 180, 43}}, // dir-import
+	"dir-upload":      {i: "\U000f0259", c: [3]uint8{250, 111, 66}}, // dir-upload
+	"dir-download":    {i: "\U000f024d", c: [3]uint8{76, 175, 80}},  // dir-download
+	"dir-secure":      {i: "\U000f0250", c: [3]uint8{249, 169, 60}}, // dir-secure
+	"dir-images":      {i: "\uf74e", c: [3]uint8{43, 150, 137}},     // dir-images
+	"dir-environment": {i: "\uf74e", c: [3]uint8{102, 187, 106}},    // dir-environment
 }
 
 // default icons in case nothing can be found
